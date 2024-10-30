@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weightlifting Fundamentals</title>
+<link rel="stylesheet" type="text/css"href="styles.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div id = "nav-left">
+            <div class="drop-down">
+            <button class="drop-down-button";>
+                &#9776
+            </button>
+                <div class = "hamburger-menu">
+                    <a class = "menu-item" href="index.html">Home</a>
+                    <a class = "menu-item2"href="compound-lifts.html">Compound lifts</a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "nav-middle">
+            <p id="site-location">
+                 <strong>Mail List</strong>
+            </p>
+        </div>
+
+        <div id = "nav-right">
+            <button onclick="makeBig()";>
+                A+
+            </button>
+            <button onclick="makeSmall()";>
+                a-
+            </button>
+        </div>
+    </nav>
+
+    <!--Java script for making font on page bigger or smaller using A+ and a-->
+
+    <script>
+
+        //---------------------------------------------------------------------------------------//
+        //Change font size
+        function makeBig() {
+            var paragraph = document.getElementById("blurb-title");
+                paragraph.style.fontSize = "34px"
+            var paragraph = document.getElementById("blurb-text");
+                paragraph.style.fontSize = "28px"
+            var paragraphs = document.getElementsByTagName("em");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "40px";
+        }
+        }
+
+        function makeSmall() {
+            var paragraph = document.getElementById("blurb-title");
+                paragraph.style.fontSize = "30px"
+            var paragraph = document.getElementById("blurb-text");
+                paragraph.style.fontSize = "30px"
+            var paragraphs = document.getElementsByTagName("em");
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.fontSize = "26px";
+            }
+        }
+        //---------------------------------------------------------------------------------------//
+
+    </script>
+
+    <main style="flex-direction: row;">
+
+        <div id="mail-list-left">
+            <div id="subscribe-blurb">
+                <h1 id="blurb-title">Join now</h1>
+                <h1 id="blurb-text">Get helpful tips and tricks on...</h1>
+                <p id="blurb-list">
+                    <ul>
+                        <li><em>Nutrition</em></li>
+                        <li><em>Form</em></li>
+                        <li><em>Workout plans</em></li>
+                    </ul>
+                </p>
+                <h1 id="blurb-text">
+                    <em>And more!</em>
+                </h1>
+
+            </div>
+            
+        </div>
+
+        <div id="mail-list-right">
+                <h1 id="title-mail-list"><em>Subscribe</em></h1>
+                <input type="text" placeholder="Enter name" id="mail-input-name">
+                <input type="text" placeholder="Enter email" id="mail-input-email">
+                <button onclick = "submit()" id= "CTA-button">Submit</button>
+                <!--replace with actual html-->
+                <div id="subscribe-blurb-m">
+                    <h1 id="blurb-title">Join now</h1>
+                    <h1 id="blurb-text">Get helpful tips and tricks on...</h1>
+                    <p id="blurb-list">
+                        <ul>
+                            <li><em>Nutrition</em></li>
+                            <li><em>Form</em></li>
+                            <li><em>Workout plans</em></li>
+                        </ul>
+                    </p>
+                    <h1 id="blurb-text">
+                        <em>And more!</em>
+                    </h1>
+                </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="contact-us.html">Contact Us</a>
+    </footer>
+
+</body>
+
+
+</html>

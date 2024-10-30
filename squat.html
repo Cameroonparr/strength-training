@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbell Squat</title>
+<link rel="stylesheet" type="text/css"href="styles.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div id = "nav-left">
+            <div class="drop-down">
+            <button class="drop-down-button";>
+                &#9776
+            </button>
+                <div class = "hamburger-menu">
+                    <a class = "menu-item" href="index.html">Home</a>
+                    <a class = "menu-item2"href="compound-lifts.html">Compound lifts</a>
+                    <a class = "menu-item2"href="mail-list.html"><strong> Join our mail list!</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "nav-middle">
+            <h1 id="site-location">
+                 <strong>Squat</strong>
+            </h1>
+        </div>
+
+        <div id = "nav-right">
+            <button onclick="makeBig()";>
+                A+
+            </button>
+            <button onclick="makeSmall()";>
+                a-
+            </button>
+        </div>
+    </nav>
+
+    
+    <script>
+
+        //---------------------------------------------------------------------------------------//
+        //Change font size
+        function makeBig() {
+            var paragraphs = document.getElementsByTagName("p");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "28px";
+        }
+        }
+
+        function makeSmall() {
+            var paragraphs = document.getElementsByTagName("p");
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.fontSize = "18px";
+            }
+        }
+        //---------------------------------------------------------------------------------------//
+
+    </script>
+
+    <main>
+
+        <div class="mobile-workout">
+
+            <h1><strong>Traditional Squat </strong></h1>
+            <h2 class="movement-header">Muscles worked</h2>
+            <img class="anatomy" src="media/squat-anatomy.png" alt="Muscles worked benchpress-anatomy">
+            <p id="movement-explanation">
+                The barbell squat is a fundamental strength training exercise that should form the cornerstone of any lower-body routine.
+                 This compound movement primarily targets the quadriceps, glutes, and hamstrings while also engaging the core, hip flexors, 
+                 and strengthening various tendons and ligaments in the lower body. 
+                 Incorporating barbell squats can significantly improve overall stability, strength, and mobility.
+            </p>
+            <h2 class="movement-header">Starting position</h2>
+            <img class="movement-img" src="media/squat-start.jpg" alt="">
+            <p id ="movement-explanation">
+                To begin, place your hands roughly shoulder width apart and grip the bar. Ensure that the bar is just below your neck.
+            </p>
+            <h2 class="movement-header">Lifting the bar</h2>
+            <img class="movement-img" src="media/squat-lift.jpg" alt="">
+            <p id ="movement-explanation">
+                Gently lift the bar off of the rack and take a step backwards. Ensure that your feet are like your
+                hands, shoulder width apart.
+            </p>
+            <h2 class="movement-header">Lowering the bar</h2>
+            <img class="movement-img" src="media/squat-lower.jpg" alt="">
+            <p id ="movement-explanation">
+                Engage your core and slowly lower yourself until your thighs are at least parallel to the floor.
+                Keep your knees aligned behind your toes by shifting your hips back as you descend.
+            </p>
+            <h2 class="movement-header">Repeat!</h2>
+            <img class="movement-img" src="media/squat-repeat.gif" alt="">
+            <p id ="movement-explanation">
+                Now, repeat for as many repetitions as you’re comfortable with, ensuring each one is controlled and steady.
+            </p>
+            <h1 class="movement-header">Tips and tricks</h1>
+            <p id ="movement-explanation">
+
+            </p>
+
+        </div>
+
+        <div class="desktop-workout">
+
+            <div class="desktop-workout-top">
+
+                <h1 class="workout-title"><strong>Traditional Squat</strong></h1>
+
+            </div>
+
+            <div class="desktop-workout-bottom">
+
+                <div class="workout-left">
+
+                    <div class="content-section-top">
+                        <h2 class="movement-header" style="text-align: center;">Muscles worked</h2>
+                        <img class="anatomy" src="media/squat-anatomy.png" alt="Muscles worked benchpress-anatomy">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Starting position</h2>
+                        <img class="movement-img" src="media/squat-start.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Lifting the bar</h2>
+                        <img class="movement-img" src="media/squat-lift.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Lowering the bar</h2>
+                        <img class="movement-img" src="media/squat-lower.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Repeat!</h2>
+                        <img class="movement-img" src="media/squat-repeat.gif" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h1 class="movement-header" style="text-align: center; font-size: 8vh; height: 300px;"><em>Tips and Tricks</em></h1>
+                    </div>
+
+                </div>
+
+                <div class="workout-right">
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            The barbell squat is a fundamental strength training exercise that should form the cornerstone of any lower-body routine.
+                            This compound movement primarily targets the quadriceps, glutes, and hamstrings while also engaging the core, hip flexors, 
+                            and strengthening various tendons and ligaments in the lower body. 
+                            Incorporating barbell squats can significantly improve overall stability, strength, and mobility.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            To begin, place your hands roughly shoulder width apart and grip the bar. Ensure that the bar is just below your neck.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            Gently lift the bar off of the rack and take a step backwards. Ensure that your feet are like your
+                            hands, shoulder width apart.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            Engage your core and slowly lower yourself until your thighs are at least parallel to the floor.
+                            Keep your knees aligned behind your toes by shifting your hips back as you descend.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            Now, repeat for as many repetitions as you’re comfortable with, ensuring each one is controlled and steady.
+                        </p>
+                    </div>
+                    <div class="content-section" style="height: 300px;">
+                        <p id = "movement-explanation">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+
+
+    </main>
+
+    <footer>
+            <a href="contact-us.html">Contact us</a>
+    </footer>
+
+</body>
+
+
+</html>

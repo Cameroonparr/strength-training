@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weightlifting Fundamentals</title>
+<link rel="stylesheet" type="text/css"href="styles.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div id = "nav-left">
+            <div class="drop-down">
+            <button class="drop-down-button";>
+                &#9776
+            </button>
+                <div class = "hamburger-menu">
+                    <a class= "menu-item" href = "index.html">Home</a>
+                    <a class = "menu-item2" href="compound-lifts.html">Compound lifts</a>
+                    <a class = "menu-item2"href="mail-list.html"><strong>Join our mail list!</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "nav-middle">
+            <p id="site-location">
+                 <strong>Contact us!</strong>
+            </p>
+        </div>
+
+        <div id = "nav-right">
+            <button onclick="makeBig()";>
+                A+
+            </button>
+            <button onclick="makeSmall()";>
+                a-
+            </button>
+        </div>
+    </nav>
+
+    <!--Java script for making font on page bigger or smaller using A+ and a- -->
+
+    <script>
+
+        //---------------------------------------------------------------------------------------//
+        //Code for changing font size
+        function makeBig() {
+            var paragraphs = document.getElementsByClassName("contact-style");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "6.5vh";
+            }
+        }
+
+        //---------------------------------------------------------------------------------------//
+        function makeSmall() {
+            var paragraphs = document.getElementsByClassName("contact-style");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "4vh";
+            }
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        function submit() {
+            alert("Your message has been sent :3")
+        }
+
+    </script>
+    <main id = "compound-main">
+
+        <div id = "form-wrapper">
+            <h2 class= "contact-style" style="margin-top: 10vh;">Name</h2>
+            <input type="text" placeholder="Enter name" class="contact-input" style="margin-bottom: 1vh;">
+            <h2 class="contact-style">Email</h2>
+            <input type="text" placeholder="Enter email" class ="contact-input" style="margin-bottom: 1vh;">
+            <h2 class = "contact-style">Enter your message</h2>
+            <input type="text" placeholder="Enter message" class ="contact-input">
+            <button onclick="submit()" id="CTA-button" style="margin-top: 10vh;"><strong>Submit</strong></button>
+        </div>
+
+    </main>
+
+    <footer>
+            <a href="">Contact us</a>
+    </footer>
+
+</body>
+
+
+</html>

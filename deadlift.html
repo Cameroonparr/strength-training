@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlift</title>
+<link rel="stylesheet" type="text/css"href="styles.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div id = "nav-left">
+            <div class="drop-down">
+            <button class="drop-down-button";>
+                &#9776
+            </button>
+                <div class = "hamburger-menu">
+                    <a class = "menu-item" href="index.html">Home</a>
+                    <a class = "menu-item2"href="compound-lifts.html">Compound lifts</a>
+                    <a class = "menu-item2"href="mail-list.html"><strong> Join our mail list!</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "nav-middle">
+            <h1 id="site-location">
+                 <strong>Deadlift</strong>
+            </h1>
+        </div>
+
+        <div id = "nav-right">
+            <button onclick="makeBig()";>
+                A+
+            </button>
+            <button onclick="makeSmall()";>
+                a-
+            </button>
+        </div>
+    </nav>
+
+    
+    <script>
+
+        //---------------------------------------------------------------------------------------//
+        //Change font size
+        function makeBig() {
+            var paragraphs = document.getElementsByTagName("p");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "28px";
+        }
+        }
+
+        function makeSmall() {
+            var paragraphs = document.getElementsByTagName("p");
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.fontSize = "18px";
+            }
+        }
+        //---------------------------------------------------------------------------------------//
+
+    </script>
+
+    <main>
+
+        <div class="mobile-workout">
+
+            <h1><strong>Conventional Deadlift</strong></h1>
+            <h2 class="movement-header">Muscles worked</h2>
+            <img class="anatomy" src="media/deadlift-anatomy.png" alt="Muscles worked benchpress-anatomy">
+            <p id="movement-explanation">
+                The conventional deadlift is one of the most beneficial yet often misunderstood lifts in strength training.
+                It effectively works the legs, with a particular emphasis on the hamstrings, more so than squats. 
+                In addition to targeting the lower body, deadlifts engage the core, lower back, upper back, 
+                and forearms, making it an incredibly time-efficient exercise to include in your routine. However,
+                proper form is essential, as improper technique—especially with heavy weights—can increase the risk of injury, 
+                particularly to the lower back.
+            </p>
+            <h2 class="movement-header">Starting position</h2>
+            <img class="movement-img" src="media/deadlift-start.jpg" alt="">
+            <p id ="movement-explanation">
+                To begin, place your hands roughly shoulder width apart, bend over and grip the bar. Hand placement should be 
+                shoulder width apart. Your feet should be about hip-width apart and pointed slightly outwards.
+            </p>
+            <h2 class="movement-header">Lifting the bar</h2>
+            <img class="movement-img" src="media/deadlift-lift.jpg" alt="">
+            <p id ="movement-explanation">
+                Prepare to lift the bar by engaging your core and lats, then begin the ascent with a controlled pull. 
+                As you lift, squeeze your glutes and drive your hips forward, keeping the bar as close as possible to your shins.
+                At the top of the movement, ensure that your legs, hips, and shoulders are fully aligned, achieving a proper "lockout."
+                In other words, stand up straight with your body in one strong, stable line.
+            </p>
+            <h2 class="movement-header">Lowering the bar</h2>
+            <img class="movement-img" src="media/deadlift-lower.jpg" alt="">
+            <p id ="movement-explanation">
+                As you lower the bar, return the bar to the ground in a contolled manner, not to fast and not too slow. You can 
+                achieve this by gradually releasing your glutes. The bar should be kept close to your shins and follow the same path as 
+                when you were lifting it.
+            </p>
+            <h2 class="movement-header">Repeat!</h2>
+            <img class="movement-img" src="media/deadlift-gif.gif" alt="">
+            <p id ="movement-explanation">
+
+                As with the other lifts, perform as many repetitions as needed! Remember that slow, controlled movements are essential, 
+                especially with deadlifts, due to the force exerted on the spine.
+                Focusing on control not only improves strength but also reduces the risk of injury.
+            </p>
+            <h1 class="movement-header">Tips and tricks</h1>
+            <p id ="movement-explanation">
+
+            </p>
+
+        </div>
+
+        <div class="desktop-workout">
+
+            <div class="desktop-workout-top">
+
+                <h1 class="workout-title"><strong>Conventional Deadlift</strong></h1>
+
+            </div>
+
+            <div class="desktop-workout-bottom">
+
+                <div class="workout-left">
+
+                    <div class="content-section-top">
+                        <h2 class="movement-header" style="text-align: center;">Muscles worked</h2>
+                        <img class="anatomy" src="media/deadlift-anatomy.png" alt="Muscles worked benchpress-anatomy">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Starting position</h2>
+                        <img class="movement-img" src="media/deadlift-start.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Lifting the bar</h2>
+                        <img class="movement-img" src="media/deadlift-lift.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Lowering the bar</h2>
+                        <img class="movement-img" src="media/deadlift-lower.jpg" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h2 class="movement-header">Repeat!</h2>
+                        <img class="movement-img" src="media/deadlift-gif.gif" alt="">
+                    </div>
+                    <div class="content-section">
+                        <h1 class="movement-header" style="text-align: center; font-size: 8vh; height: 300px;"><em>Tips and Tricks</em></h1>
+                    </div>
+
+                </div>
+
+                <div class="workout-right">
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            The conventional deadlift is one of the most beneficial yet often misunderstood lifts in strength training.
+                            It effectively works the legs, with a particular emphasis on the hamstrings, more so than squats. 
+                            In addition to targeting the lower body, deadlifts engage the core, lower back, upper back, 
+                            and forearms, making it an incredibly time-efficient exercise to include in your routine. However,
+                            proper form is essential, as improper technique, especially with heavy weight, can increase the risk of injury, 
+                            particularly to the lower back.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            To begin, place your hands roughly shoulder width apart, bend over and grip the bar. Hand placement should be 
+                            shoulder width apart. Your feet should be about hip-width apart and pointed slightly outwards.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            Prepare to lift the bar by engaging your core and lats, then begin the ascent with a controlled pull. 
+                            As you lift, squeeze your glutes and drive your hips forward, keeping the bar as close as possible to your shins.
+                            At the top of the movement, ensure that your legs, hips, and shoulders are fully aligned, achieving a proper "lockout."
+                            In other words, stand up straight with your body in one strong, stable line.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            As you lower the bar, return the bar to the ground in a contolled manner, not to fast and not too slow. You can 
+                            achieve this by gradually releasing your glutes. The bar should be kept close to your shins and follow the same path as 
+                            when you were lifting it.
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <p id = "movement-explanation">
+                            As with the other lifts, perform as many repetitions as needed! Remember that slow, controlled movements are essential, 
+                            especially with deadlifts, due to the force exerted on the spine.
+                            Focusing on control not only improves strength but also reduces the risk of injury.
+                        </p>
+                    </div>
+                    <div class="content-section" style="height: 300px;">
+                        <p id = "movement-explanation">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+
+
+    </main>
+
+    <footer>
+            <a href="contact-us.html">Contact us</a>
+    </footer>
+
+</body>
+
+
+</html>

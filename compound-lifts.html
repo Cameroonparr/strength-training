@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Practical Lab</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+
+    <nav>
+        <div id = "nav-left">
+            <div class="drop-down">
+            <button class="drop-down-button";>
+                &#9776
+            </button>
+                <div class = "hamburger-menu">
+                    <a class= "menu-item" href = "index.html">Home</a>
+                    <a class = "menu-item2" href="compound-lifts.html">Compound lifts</a>
+                    <a class = "menu-item2"href="mail-list.html"><strong>Join our mail list!</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div id = "nav-middle">
+            <p id="site-location">
+                 <strong>Compound Lifts</strong>
+            </p>
+        </div>
+
+        <div id = "nav-right">
+            <button onclick="makeBig()";>
+                A+
+            </button>
+            <button onclick="makeSmall()";>
+                a-
+            </button>
+        </div>
+
+    </nav>
+
+    <main>        
+        <div id= "compound-main-top">
+            <input type="text" id="compound-search" placeholder="Search for exercises!" onchange="displayFilteredItems()">
+        </div>
+        <div id = "compound-main-bottom">
+            <div id="itemList"></div>
+        </div>
+		<!--Insert data stored in data.js file to this html file-->
+        <script src="data.js"></script>    
+    </main>
+
+    <script>
+        //---------------------------------------------------------------------------------------//
+        //Display all items on webpage
+        function getAllItems(itemList) {
+        let allItems = "";
+        // Loop through data.js and retrieve webpage name and image 
+        for(let i = 0; i < itemList.length; i++) {
+            let item = '<div class="item-card-style" onclick="showItem(' + itemList[i].id + ')">'
+                    + '<h4 class="excersise-panels">' + itemList[i].title + '</h4>'
+                    + '<img src="' + itemList[i].image_url + '" height="150vh" width = "150vw" style = "border-radius: 5%" id = compound-img>'
+                    + '</div>';
+            allItems += item;
+        }
+        return allItems;
+        }
+        //---------------------------------------------------------------------------------------//
+        //Opens new window for chosen website  
+        //takes title from id in data.js and concatinates to ".html"
+        function showItem(i) {
+            i --
+            let title = items[i].title
+            window.open(title + '.html')
+        }
+        //---------------------------------------------------------------------------------------//
+        //Display all excercises in the "items" array inside "itemList" 
+        document.getElementById("itemList").innerHTML = getAllItems(items);
+        //---------------------------------------------------------------------------------------//
+        //Search function
+        //This function is reponse to the event "change" happening on the "input"
+        function displayFilteredItems() {
+            //Get the entered keywords
+            let keyword = document.getElementById("compound-search").value.toLowerCase();
+            //Search and keep items that their title contains keyword
+            let filteredItems = items.filter(item => {return item.title.toLowerCase().includes(keyword); });
+            //Display this filteredItems on webpage -inside "itemList"
+            document.getElementById("itemList").innerHTML = getAllItems(filteredItems);
+        }
+        //---------------------------------------------------------------------------------------//
+        //Code for changing font size
+        function makeBig() {
+            var paragraphs = document.getElementsByClassName("excersise-panels");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "32px";
+            }
+        }
+        //---------------------------------------------------------------------------------------//
+        function makeSmall() {
+            var paragraphs = document.getElementsByClassName("excersise-panels");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.fontSize = "26px";
+            }
+        }
+        //---------------------------------------------------------------------------------------//
+    </script>
+
+    <footer>
+        <a href="contact-us.html">Contact us</a>
+    </footer>
+
+</body>
+</html>

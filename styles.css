@@ -1,0 +1,634 @@
+
+/*Desktop CSS*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+height: 10vh;
+background-color: black;
+}
+
+#nav-left  {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex: 1;
+  margin: 5px;
+}
+
+/*Dropdown for menu*/
+
+.drop-down-button {
+  color: white;
+  border: none;
+  font-size: 50px;
+  background-color:  rgba(0, 0, 0, 0);
+  opacity: 100%;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0);
+  opacity: 100%;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.menu-item, .menu-item2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  width: 20vw;
+  height: 5vh;
+  text-align: center;
+  margin: -1%;
+  margin-bottom: 0.1vh;
+} 
+
+.hamburger-menu .menu-item {
+margin-top: 0.9vh;
+}
+
+.hamburger-menu .menu-item2 {
+margin-top: 2px;
+}
+
+.drop-down:hover .hamburger-menu {display: block;}
+
+#nav-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 5px;
+}
+
+#site-location {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+#nav-right{
+display: flex;
+font-size: 20px;
+justify-content: end ;
+align-items: center;
+flex: 1;
+margin: 5px;
+}
+
+#nav-right button {
+font-size: 24px;
+background-color: black;
+color: white;
+border: none;
+margin-left: 10px;
+cursor: pointer;
+margin-right: 3px;
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 80vh;
+overflow-y: auto;
+}
+
+#title-mail-list {
+  margin-bottom: 5vh;
+  }
+
+#main-paragraph {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 6vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+main h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5vh;
+}
+
+#home-image {
+  height: 35vh;
+  width: 25vw;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+/*Set style for compound button homepage*/
+/*Make it have a color transisition effect*/
+main #CTA-button{
+  margin-top: 20px;
+  height: 50px;
+  width: 150px;
+
+  border: none;
+  border-radius: 10px;
+  
+  background-color: #3399FF;
+  transition: background-color 1s ease-out 100ms;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  margin-bottom: 0.5vh;
+}
+
+/*initiate hover color change effect*/
+#CTA-button:hover{
+  background-color:  #33ffe4;
+}
+
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+background-color: black;
+}
+
+footer,a{
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+/*mail-list page*/
+
+/*seperate from contact page*/
+
+#mail-list-left{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 35vw;
+height: 100%;  
+}
+
+#mail-list-image{
+  height: 65vh;
+  width: 20vw;
+  background-color: gray;
+  margin-left: -20%;
+  margin-right: 1vw;
+  margin-bottom: 14vh;
+}
+
+#mail-list-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  margin-top: 4vh;
+}
+
+#mail-list-right,h1{
+  font-size: 60px;
+}
+
+#mail-input-name{
+  margin-top: -2vh;
+  width: 40vw;
+  height: 5vh;
+  margin-bottom: 1vh;
+  font-size: 3vh;
+}
+
+#mail-input-email{
+  width: 40vw;
+  height: 5vh;
+  font-size: 3vh;
+}
+
+#mail-input-message{
+  width: 40vw;
+  height: 10vh;
+  text-align: start;
+  font-size: 3vh;
+}
+
+.item-card-style{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#blurb-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 42px;
+  color: aqua;
+  text-decoration: underline;
+  margin-bottom: 2vh;
+}
+
+#blurb-text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  margin-bottom: 2vh;
+}
+
+#blurb-text,em{
+  margin-top: 1vh;
+}
+
+.blurb-list,ul{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  list-style: none;
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 768px) {
+  
+  .hamburger-menu .menu-item {
+    margin-top: 0.5px;
+  }
+    
+  .hamburger-menu .menu-item2 {
+    margin-top: 1px;
+  }
+
+  main {
+    overflow-y: scroll;
+  }
+
+  .menu-item, .menu-item2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    margin-left: -1.5%;
+    margin-bottom: 0.1vh;
+  }
+
+  #nav-right button {
+    font-size: 8vw;
+  }
+
+  #CTA-button{
+    height: 6vh;
+  }
+
+  main,h1{
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  #home-image{
+    margin-top: 1vh;
+    width: 60vw;
+    height: 25vh;
+  }
+  
+  #mail-list-left {
+    display: none;
+  }
+
+  #mail-list-image-m {
+    height: 50%;
+    width: 50%;
+    margin-top: 3vh;
+    background-color: gray;
+    font-size: small;
+    text-align: center;
+  }
+
+  #mail-list-right{
+    width: 100%;
+  }
+
+  #site-location {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+ #mail-input-name, #mail-input-email, #input-message-contact-us,#input-name-contact-us {
+  width: 65vw;
+ }
+
+ #title-mail-list{
+  font-size: 6vh;
+ }
+
+.contact-style{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4vh;
+  margin-bottom: 1vh;
+  width: 100vw;
+}
+
+.contact-input{
+  width: 65vw;
+  height: 5vh;
+  font-size: 3vh;
+}
+
+.compound-top{
+  height: 10vh;
+  width: 100vw;
+}
+
+.compound-bottom{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100vw;
+}
+
+#compound-search{
+  height: 6vh;
+  width: 80vw;
+  margin-top: 1vh;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.excersise-panels{
+  font-size: large;
+}
+
+.excersise-panels, h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.excersise-panels, img {
+  margin-bottom: 1vh;
+}
+
+
+.anatomy{
+  height: 80vh;
+  width: 95vw;
+  border-radius: 5%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.movement-img{
+  height: 40vh;
+  width: 70vw;
+  background-color: #3399FF;
+  border-radius: 5%;
+}
+
+.movement-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4vh;
+}
+
+.desktop-workout{
+  display: none;
+}
+
+#movement-explanation {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+h2, .movement-header {
+  margin-bottom: 1vh;
+}
+
+}
+
+/* Media query for devices with a min width of 769px (desktop) */
+@media only screen and (min-width: 769px) {
+  
+  #subscribe-blurb-m{
+    display: none;
+  }
+
+  .contact-style{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    white-space: nowrap;
+  }
+  
+  .contact-input{
+    width: 65vw;
+    height: 5vh;
+  }
+
+  .contact-style{
+    margin-right: 58vw;
+  }
+
+  #contact-style{
+    margin-left: -39vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+  }
+
+#compound-main-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 95vw;
+}
+
+#compound-main-top {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+#compound-search{
+  height: 6vh;
+  width: 40vw;
+  margin-top: 3vh;
+  font-size: larger;
+}
+
+.excersise-panels{
+  font-size: 24px;
+}
+
+#itemList {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  padding-bottom: 20vh;
+}
+
+.item-card-style{
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.item-card-style:hover{
+  transform: translateY(-10px);
+}
+
+#compound-img{
+  height: 30vh;
+  width: 30vh;
+}
+
+#blurb-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+#blurb-text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+#subscribe-blurb{
+display: inline-block;
+height: 40vh;
+width: 30vw;
+margin-right: 8vw;
+margin-bottom: 16vh;
+}
+
+#blurb-list,ul{
+  text-align: center;
+}
+
+#form-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 80vh;
+}
+
+.desktop-workout{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.desktop-workout-top{
+  height: 15vh;
+  width: 100vw;
+  margin-bottom: 5vh;
+}
+
+.workout-title{
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 8vh;
+}
+
+.desktop-workout-bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+
+.workout-left {
+  height: 100vh;
+  width: 50vw;
+}
+
+.workout-right {
+  height: 100vh;
+  width: 50vw;
+}
+
+.movement-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5vh;
+  margin-bottom: 1vh;
+  margin-top: 4vh;
+}
+
+.movement-img{
+  height: 60vh;
+  width: 40vw;
+  border-radius: 5%;
+  margin-bottom: 10vh;
+}
+
+.anatomy{
+  height: 50vh;
+  width: 40vw;
+  margin-left: 5vw;
+  border-radius: 3%;
+  margin-bottom: 5vh;
+}
+
+.mobile-workout{
+  display: none;
+}
+
+.text-wrapper {
+  height: 20vh;
+  width: 50vw;
+}
+
+#movement-explanation {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  margin-right: 8vw;
+}
+
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 50vw;
+  word-wrap: break-word;
+  margin-bottom: 15vh;
+}
+
+.content-section-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 50vw;
+  margin-bottom: 10vh;
+}
+
+.mobile-workout{
+  display: none;
+}
+
+}
+
+
+
